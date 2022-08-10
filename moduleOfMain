@@ -1,0 +1,29 @@
+if __name__ == '__main__':
+	while True:
+		print("What do you want to do?(Please input the item number.eg: 2")
+		for out1,out2 in info.items():
+			print(out1,out2)
+		
+		selection = input()
+		print("Your selection is %s! "%str(selection))
+		for num in info:
+			if selection == num:
+				
+				_str = info[str(num)]
+				# print(_str)
+				if _str == 'exit.':
+					decive = 0
+					break
+				elif _str == 'Get company finance.' :
+					# write down action
+					print(_str)
+				elif _str == 'Get company debt infomation.' :
+					#write down action
+					print(_str)
+
+
+		if decive == 0:
+			print("--------exit process--------")
+			break
+
+		print('-----new run-----')
